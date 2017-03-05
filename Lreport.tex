@@ -35,12 +35,38 @@
 		If $\a$ is a one-to-one mapping, $s$ is unique for every $t$, and we call a inverse mapping $\a^{-1}$ which is one-to-one of $T$ onto $S$
 		\end{definition}
 		\begin{definition}
-		Resultant or Product of mapping is denoted as $\a\b$, where $\a$ maps set $S$ onto set $T$ and $\b$ maps set $T$ onto set $U$. Mapping of $S$ onto $U$ can be written as $S(\a\b)=(S\a)\b$, and same for each element
+		Resultant or Product of mapping is denoted as $\a\b$, where $\a$ maps set $S$ onto set $T$ and $\b$ maps set $T$ onto set $U$. Mapping of $S$ onto $U$ can be written as $S(\a\b)=(S\a)\b$, and same for each element.
+		\end{definition}
+		\begin{remark}
+		Mapping of a set into itself is called \textit{transformations}.
+		\end{remark}
+		\begin{definition}
+		Identity mapping, denoted $\id_S$, its product with any transformation $\a$, $\id_S\a = \a = \a\id_S$
 		\end{definition}
 		\begin{theorem}
-		content...
+		If $\a$ is a one-to-one mapping of $S$ onto $T$ and has inverse $\a^{-1}$, then $\a\a^{-1}=\id_S$ and $\a^{-1}\a=\id_T$. Conversely, if $\a:S\mapsto T$ and $\b:T \mapsto S$ such that $\a\b=\id_S$ and $\b\a=\id_T$, then $\a,\b$ are one-to-one mapping and $\b = \a^{-1}$
 		\end{theorem}
-	
+	\subsection{Equivalence Relations}
+		\begin{definition}
+		The equivalence relation $\sim$ of a pair of element satisfies:
+		\begin{enumerate}
+		\item a $\sim$ a (reflecive property).
+		\item a $\sim$ b \implies b $\sim$ a (symmetric property)
+		\item a $\sim$ b and b $\sim$ c \implies a $\sim$ c (transitive property)
+ 		\end{enumerate}
+		\end{definition}
+		\begin{definition}
+		An equivalence class 
+		\end{definition}
+		\begin{theorem}
+		Two equivalence classes are either identical or mutually exclusive
+		\end{theorem}
+		\begin{proof}
+		Suppose we have an equivalence class $[a]$ of element $a$, if $b\in [a]$, then $[b]\subseteq[a]$; hence by maximality of $[b]$, we conclude $[b]=[a]$.
+		\end{proof}
+		\begin{corollary}
+		The collection of distinct equivalence classes gives a decomposition of the set $S$ into multually exculsive subsets. Conversely, suppose a set $S=\cup S_i$, where $S_i$ are multually exclusive, we can define relation $\mathcal{R}$ as $a\sim b \iff $ subsets $S_i,S_j$ containing $a,b$ are identical.
+		\end{corollary}
 	\section{Groups}
 	\section{Rings}
 	\section{Fields}

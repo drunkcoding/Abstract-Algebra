@@ -41,9 +41,10 @@
  %\usepackage{relsize}
  \usepackage{titlesec}
  \usepackage{float}
+ \usepackage{dsfont}
  
 %Theorem
-\newtheorem{theorem}{Theorem}[section]
+\newtheorem{theorem}{Theorem}[subsection]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
 
@@ -51,7 +52,7 @@
 \newtheorem*{remark}{Remark}
 
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[section]
+\newtheorem{definition}{Definition}[subsection]
 
 %Problem typesetting
 
@@ -145,6 +146,7 @@
 \def\gam{\gamma}
 \def\ct{\cos{\theta}}
 \def\st{\sin{\theta}}
+\def\id{\mathds{1}}
 
 %dimensions:
 \def\m{\,\rm m}
@@ -217,7 +219,7 @@
 \def\sgn{{\rm sgn}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\C}{\mathbb{C}}
-\newcommand{\L}{\mathcal{L}}
+\renewcommand{\L}{\mathcal{L}}
 \newcommand{\Z}{\mathbb{Z}}
 
 
