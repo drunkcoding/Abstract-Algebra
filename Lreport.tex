@@ -114,8 +114,8 @@
 		\begin{definition}
 		$\forall a,b,c\in\semiG$, we have $ab=ac\implies b=c$ is called left cancellation and so is right cancellation that $\forall a,b,c\in\semiG$, we have $ba=ca\implies b=c$.
 		\end{definition}
-		\begin{theorem}
-		With $a,b\in\group$, the linear equation $ax=b$ the only solution $a^{-1}b$.
+		\begin{theorem}\label{eqingroup}
+		With $a,b\in\group$, the linear equation $ax=b$ the only solution $a^{-1}b$. Also $ya=b$ has solution $ab^{-1}$.
 		\end{theorem}
 		\begin{proof}
 		If the solution is not unique, we set another solution to be $x'$, so that $ax=ax'$, contrasting to the result of left cancellation.
@@ -146,8 +146,25 @@
 		Let $\semiG=(a_1, a_2,\dots,a_n)$ has n distinct element, take $a,b\in\semiG$, and let $\mathfrak{T}=(aa_1, aa_2,\dots,aa_n)\implies \mathfrak{T}\subset\semiG$ according to the self-mapping of $\semiG$. $aa_i=aa_j\implies a_i=a_j$ by cancellation law, hence $\mathfrak{T}$ also have n distinct elements \implies $\mathfrak{T}=\semiG$. So that the linear equation $ax=b$ is solvable in $\semiG$, so as $ya=b$.
 		\end{proof}
 		\begin{definition}
-		
+		If a set $\subG$ is a non-empty subset of (semi)group $\semiG$ and has property
+		\begin{enumerate}
+		\item closure i.e. $a,b\in\subG\implies ab\in\subG$
+		\item Exist $e\in\subG$, $\forall a\in\subG$ such that $ae=a=ea$
+		\item $\forall a\in\subG$ exist $a^{-1}$ such that $aa^{-1}=e=a^{-1}a$
+		\end{enumerate}
+		determines a sub-(semi)group of $\semiG$
 		\end{definition}
+		\begin{theorem}\label{sub-id-inv}
+		Let $\subG$ to be the subgroup of $\group$, the identity in $\group$ is the identity in $\subG$, and $\forall a\in\subG$ the inverse in $\group$ is also the inverse in $\subG$.
+		\end{theorem}
+		\begin{theorem}
+		A non-empty subset $\subG$ of a group $\group$ is a subgroup iff $\forall a,b\in\subG, ab^{-1}\in\subG$.
+		\end{theorem}
+		\begin{proof}
+		If $\subG$ is a subgroup, then proved from Theorem \ref{eqingroup}. \\
+		$\forall a\in\subG$, we have $e=aa^{-1}\in\subG$ and implies $a^{-1}=ea^{-1}\in\subG$, so that $\subG$ contains an element and its inverse, hence $ab=a(b^{-1})^{-1}\in\subG$ proves closure.
+		\end{proof}
+		
 	$\mathfrak{ABCDEFGHIJKLMNOPRSTUVXWYZ}$
 	
 	$\mathfrak{abcdefghijklmnopqrstuvwxyz}$
