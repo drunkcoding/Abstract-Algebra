@@ -53,7 +53,7 @@
 		Suppose we have for sets $S,T,U,V$ and $\a:S\mapsto T;\b:T\mapsto U;\gam:U\mapsto V$. Then $\forall x\in S$, $x((\a\b)\gam)=(x(\a\b))\gam=((x\a)\b)\gam$ and $x(\a(\b\gam))=(x\a)(\b\gam)=((x\a)\b)\gam$, hence $x((\a\b)\gam)=x(\a(\b\gam))$
 		\end{proof}
 	\subsection{Equivalence Relations}
-		\begin{definition}
+		\begin{definition}\label{relations}
 		The equivalence relation $\sim$ of a pair of element satisfies:
 		\begin{enumerate}
 		\item a $\sim$ a (reflecive property).
@@ -62,7 +62,7 @@
  		\end{enumerate}
 		\end{definition}
 		\begin{definition}
-		An equivalence class 
+		We have a relation $\sim$ defined on a set $S$, an equivalence class is the subset of $S$ of element $b$ such that $b\sim a$.
 		\end{definition}
 		\begin{theorem}
 		Two equivalence classes are either identical or mutually exclusive
@@ -145,6 +145,7 @@
 		\begin{proof}
 		Let $\semiG=(a_1, a_2,\dots,a_n)$ has n distinct element, take $a,b\in\semiG$, and let $\mathfrak{T}=(aa_1, aa_2,\dots,aa_n)\implies \mathfrak{T}\subset\semiG$ according to the self-mapping of $\semiG$. $aa_i=aa_j\implies a_i=a_j$ by cancellation law, hence $\mathfrak{T}$ also have n distinct elements \implies $\mathfrak{T}=\semiG$. So that the linear equation $ax=b$ is solvable in $\semiG$, so as $ya=b$.
 		\end{proof}
+	\subsection{Subgroups}
 		\begin{definition}
 		If a set $\subG$ is a non-empty subset of (semi)group $\semiG$ and has property
 		\begin{enumerate}
@@ -164,7 +165,30 @@
 		If $\subG$ is a subgroup, then proved from Theorem \ref{eqingroup}. \\
 		$\forall a\in\subG$, we have $e=aa^{-1}\in\subG$ and implies $a^{-1}=ea^{-1}\in\subG$, so that $\subG$ contains an element and its inverse, hence $ab=a(b^{-1})^{-1}\in\subG$ proves closure.
 		\end{proof}
-		
+		\begin{theorem}
+		If $A$ is collection of any subgroup $\subG$ of $\group$, then the intersection $\displaystyle\bigcap\limits_{A}\subG$ is a subgroup.
+		\end{theorem}
+		\begin{theorem}
+		The centralizer $\centralizer(S), S\subset\group$ of $\group$ (the set of elements of $\group$ that commute with each element of $S$) is a subgroup of $\group$
+		\end{theorem}
+		\begin{proof}
+		We take $a,b\in\centralizer(S), x\in S$, so that $(ab)x=a(bx)=a(xb)=(ax)b=(xa)b=x(ab)\implies ab\in\centralizer(S)$. And for $\forall a\in\centralizer(S)$, we have $ax=xa\implies axa^{-1}=x \implies xa^{-1}=a^{-1}x\implies a^{-1}\in\centralizer(S)$. The identity exists, so the $\centralizer(S)$ is a subgroup of $\group$.
+		\end{proof}
+	\subsection{Isomorphism}
+		\begin{definition}
+		Two groups $\group$ and $\group'$ are said to be isomorphic if there exists a 1-1 mapping $x\mapsto x'$ of $\group$(Isomorphism) onto $\group'$ such that $(xy)'=x'y'$. $\group$ and $\group'$ are said to be \textit{abstractly equivalent}, written as $\group\cong\group'$.
+		\end{definition}
+		\begin{theorem}
+		Isomorphism is a equivalence relation (definition \ref{relations}). 
+		\end{theorem}
+		\begin{theorem}
+		If a mapping $\varphi$ is an isomorphism of $\group$ onto $\group'$
+ 		\begin{enumerate}
+		\item $e\in\group$ is the identity, so that $\varphi(e)=e'\in\group$ is the identity of $\group'$.
+		\item $a\in\group$ has inverse $a^{-1}$, so that $\varphi(a^{-1})=(\varphi(a))^{-1}$.
+		\end{enumerate}
+		\end{theorem}
+	\subsection{Transformation Groups}
 	$\mathfrak{ABCDEFGHIJKLMNOPRSTUVXWYZ}$
 	
 	$\mathfrak{abcdefghijklmnopqrstuvwxyz}$
