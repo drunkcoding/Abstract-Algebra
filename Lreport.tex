@@ -103,7 +103,7 @@
 		We set $a,a',a''\in\semiG,$ that $aa'=e, a''a=e$, conclude that $a'=(a''a)a'=a''(aa')=a''$
 		\end{proof}
 	\subsection{Groups}
-		\begin{definition}
+		\begin{definition}\label{defGroup}
 		A group $\group$ is a semi-group that has an identity $e$ and in which every element is a unit.
 		\begin{enumerate}
 		\item associativity
@@ -189,6 +189,18 @@
 		\end{enumerate}
 		\end{theorem}
 	\subsection{Transformation Groups}
+	\begin{definition}
+	For an arbitrary set $S$, let $\transG(S)$ to be semi-group of transformations (mapping) of $S$ into itself. Generally, a transformation group (in $S$) is any subgroup of a group $\transG(S)$ in which the definition \ref{defGroup} holds.
+	\end{definition}
+	\begin{definition}
+	The special case in which $S$ is the set of $n$ numbers, $\transG(S)$ is called symmetric group of degree n, donated $S_n$. For $\a\in S_n$, we write 
+	$\nm{
+	1 & 2 & \cdots & n\\
+	1\a & 2\a & \cdots & n\a\\
+	}$
+	to represent the mapping order.
+	\end{definition}
+	
 	$\mathfrak{ABCDEFGHIJKLMNOPRSTUVXWYZ}$
 	
 	$\mathfrak{abcdefghijklmnopqrstuvwxyz}$
